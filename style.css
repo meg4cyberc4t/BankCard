@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.row label {
+    margin-bottom: 5px;
+}
+
+.row :last-child {
+    height: 30px;
+}
+
+.row input {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.preview {
+    width: 85.6mm;
+    height: 53.98mm;
+    border-radius: 3.18mm;
+    box-shadow: 0 0 5px 0 #0006;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number {
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+.system {
+    width: 100px;
+    height: 30px;
+    background-image: url("img/cc-paypal-brands.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 10px;
+}
+td img{
+    height: 30px;
+}

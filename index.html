@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BandCard</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>Добавить банковскую карточку</h1>
+<div class="container">
+    <form id="setCard">
+        <div class="row">
+            <label for="u">Cardholder</label>
+            <input id="u" type="text" name="user" value="Igor Molchanov">
+        </div>
+        <div class="row">
+            <label for="n">Card number</label>
+            <input id="n" type="text" name="number" maxlength="16" pattern="\d{0,16}" value="0000111122223333">
+        </div>
+        <div class="row">
+            <label for="s">Pay system</label>
+            <select id="s" name="system">
+                <option value="img/cc-visa-brands.svg">visa</option>
+                <option value="img/cc-mastercard-brands.svg">mastercard</option>
+                <option value="img/cc-paypal-brands.svg" selected>paypal</option>
+            </select>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <div class="preview">
+        <div class="line"></div>
+        <div class="line number">
+            <span>0000</span>
+            <span>1111</span>
+            <span>2222</span>
+            <span>3333</span>
+        </div>
+        <div class="line">
+            <div class="user">Ivan Polovinkin</div>
+            <div class="system"></div>
+        </div>
+    </div>
+</div>
+<div class="result">
+    <table>
+        <thead>
+            <tr>
+                <th>user</th>
+                <th>number</th>
+                <th>system</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
